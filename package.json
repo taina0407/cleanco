@@ -1,0 +1,41 @@
+{
+  "name": "cleanco-ts",
+  "version": "1.0.0",
+  "description": "Clean organization names - TypeScript version",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/taina0407/cleanco-ts.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "clean": "rm -rf dist",
+    "prepublishOnly": "npm run clean && npm run build"
+  },
+  "keywords": [
+    "company",
+    "organization",
+    "name",
+    "cleaning",
+    "business",
+    "entity",
+    "typescript"
+  ],
+  "author": "Original by psolin, TypeScript port by Cursor",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/node": "^22.15.32",
+    "jest": "^30.0.0",
+    "ts-jest": "^29.4.0",
+    "typescript": "^5.8.3"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.txt"
+  ]
+}
